@@ -9,12 +9,13 @@
     <classNode dependClassName="java.nio.file.StandardOpenOption" />
   </dependency>
   <dependency className="BaseTemplate.sandbox.TemplateExample">
+    <classNode dependClassName="BaseTemplate.behavior.TemplateResult" />
     <classNode dependClassName="BaseTemplate.sandbox.BaseTemplateGenerator" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.StringBuilder" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.DequeSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />

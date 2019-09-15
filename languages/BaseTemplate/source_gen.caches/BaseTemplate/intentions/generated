@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="5alxz0vqwm8z5o4g8znzzo9u87b5bl4">
-  <files names="AddEnd_Intention.java:AddSeparator_Intention.java:AddStart_Intention.java:CopyText_Intention.java:Else_Intention.java:Indent_Intention.java:InsertExpression_Intention.java:IntentionsDescriptor.java:NoElse_Intention.java:TemplateNewline_Intention.java" />
-</product>
-

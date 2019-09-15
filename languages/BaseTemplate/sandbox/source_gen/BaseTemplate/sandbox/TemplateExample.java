@@ -5,6 +5,8 @@ package BaseTemplate.sandbox;
 import java.util.List;
 import java.util.ArrayList;
 import org.jetbrains.mps.openapi.model.SNode;
+import BaseTemplate.behavior.TemplateResult;
+import jetbrains.mps.internal.collections.runtime.DequeSequence;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
@@ -33,37 +35,49 @@ public class TemplateExample {
 
     String template1 = "";
     {
-      StringBuilder result = new StringBuilder();
+      TemplateResult result = new TemplateResult();
       result.append("public void printSomething() {");
-      result.append("\n");
+      result.appendNewline();
       result.append("    // Hello ");
       result.append("" + world);
-      result.append("\n");
-      for (String name : names) {
-        result.append("    System.out.println(\"");
-        result.append("" + name);
-        result.append("\");");
-        result.append("\n");
-        if (name.startsWith("a")) {
-          result.append("    // twaalf");
-          result.append("\n");
-        } else {
-          result.append("    // No Twelve");
-          result.append("\n");
+      result.appendNewline();
+      {
+        DequeSequence.fromDequeNew(result.indents).pushElement("    ");
+        boolean firstInLoop_4xg1bs_c0d0d = true;
+        for (String name : names) {
+          if (firstInLoop_4xg1bs_c0d0d) {
+            firstInLoop_4xg1bs_c0d0d = false;
+          }
+          result.append("System.out.println(\"");
+          result.append("" + name);
+          result.append("\");");
+          result.appendNewline();
+          DequeSequence.fromDequeNew(result.indents).pushElement("    ");
+          if (name.startsWith("a")) {
+            result.append("// twaalf");
+            result.appendNewline();
+          } else {
+            result.append("// No Twelve");
+            result.appendNewline();
+          }
+          DequeSequence.fromDequeNew(result.indents).popElement();
+        }
+        DequeSequence.fromDequeNew(result.indents).popElement();
+      }
+      {
+        SAbstractConcept cncpt = SNodeOperations.getConcept(literal);
+        switch (conceptIndex.index(cncpt)) {
+          case 0:
+            if (true) {
+              result.append("" + 12);
+              result.appendNewline();
+            }
+            break;
+          default:
         }
       }
-      SAbstractConcept cncpt = SNodeOperations.getConcept(literal);
-      switch (conceptIndex.index(cncpt)) {
-        case 0:
-          if (true) {
-            result.append("" + 12);
-            result.append("\n");
-          }
-          break;
-        default:
-      }
       result.append("}");
-      result.append("\n");
+      result.appendNewline();
       template1 = result.toString();
     }
 
