@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,31,0" name="BaseTemplate.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:b12bbd6f-d825-410c-8d09-184e761d6b97(BaseTemplate.constraints)/1282178605590157636">
+    <file name="TemplateMethod2_Constraints.java">
+      <node id="1282178605590157636" at="18,40,19,146" concept="5" />
+      <node id="1282178605590157636" at="23,84,24,119" concept="3" />
+      <node id="1282178605590157637" at="27,37,28,20" concept="4" />
+      <node id="1282178605590157637" at="31,42,32,37" concept="3" />
+      <node id="1282178605590158191" at="32,37,33,488" concept="4" />
+      <node id="1282178605590157637" at="36,37,37,20" concept="4" />
+      <node id="1282178605590157637" at="40,62,41,37" concept="3" />
+      <node id="1282178605590191989" at="41,37,42,526" concept="1" />
+      <node id="1282178605590157636" at="44,7,45,22" concept="4" />
+      <node id="1282178605590157636" at="18,0,21,0" concept="0" trace="TemplateMethod2_Constraints#()V" />
+      <node id="1282178605590157637" at="26,0,30,0" concept="2" trace="hasOwnGetter#()Z" />
+      <node id="1282178605590157637" at="35,0,39,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="1282178605590157637" at="30,0,35,0" concept="2" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="1282178605590157637" at="39,0,44,0" concept="2" trace="setValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="1282178605590157637" at="24,119,44,7" concept="1" />
+      <node id="1282178605590157636" at="22,0,47,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="1282178605590157636" at="18,40,19,146" />
+      <scope id="1282178605590157637" at="27,37,28,20" />
+      <scope id="1282178605590157637" at="36,37,37,20" />
+      <scope id="1282178605590157637" at="31,42,33,488">
+        <var name="propertyName" id="1282178605590157637" />
+      </scope>
+      <scope id="1282178605590157637" at="40,62,42,526">
+        <var name="propertyName" id="1282178605590157637" />
+      </scope>
+      <scope id="1282178605590157636" at="18,0,21,0" />
+      <scope id="1282178605590157637" at="26,0,30,0" />
+      <scope id="1282178605590157637" at="35,0,39,0" />
+      <scope id="1282178605590157637" at="30,0,35,0">
+        <var name="node" id="1282178605590157637" />
+      </scope>
+      <scope id="1282178605590157637" at="39,0,44,0">
+        <var name="node" id="1282178605590157637" />
+        <var name="propertyValue" id="1282178605590157637" />
+      </scope>
+      <scope id="1282178605590157636" at="23,84,45,22">
+        <var name="properties" id="1282178605590157636" />
+      </scope>
+      <scope id="1282178605590157636" at="22,0,47,0" />
+      <unit id="1282178605590157637" at="25,137,44,5" name="BaseTemplate.constraints.TemplateMethod2_Constraints$1" />
+      <unit id="1282178605590157636" at="17,0,48,0" name="BaseTemplate.constraints.TemplateMethod2_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:b12bbd6f-d825-410c-8d09-184e761d6b97(BaseTemplate.constraints)/133632534783684811">
+    <file name="TemplateMethod_Constraints.java">
+      <node id="133632534783684811" at="20,39,21,144" concept="5" />
+      <node id="133632534783684811" at="25,84,26,119" concept="3" />
+      <node id="8349141316941195429" at="29,37,30,20" concept="4" />
+      <node id="8349141316941195429" at="33,62,34,37" concept="3" />
+      <node id="8349141316941195454" at="34,37,35,203" concept="1" />
+      <node id="8349141316941205583" at="35,203,36,740" concept="1" />
+      <node id="133632534783684811" at="38,7,39,22" concept="4" />
+      <node id="133632534783684811" at="20,0,23,0" concept="0" trace="TemplateMethod_Constraints#()V" />
+      <node id="8349141316941195429" at="28,0,32,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="8349141316941195429" at="32,0,38,0" concept="2" trace="setValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="8349141316941195429" at="26,119,38,7" concept="1" />
+      <node id="133632534783684811" at="24,0,41,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="133632534783684811" at="20,39,21,144" />
+      <scope id="8349141316941195429" at="29,37,30,20" />
+      <scope id="133632534783684811" at="20,0,23,0" />
+      <scope id="8349141316941195429" at="33,62,36,740">
+        <var name="propertyName" id="8349141316941195429" />
+      </scope>
+      <scope id="8349141316941195429" at="28,0,32,0" />
+      <scope id="8349141316941195429" at="32,0,38,0">
+        <var name="node" id="8349141316941195429" />
+        <var name="propertyValue" id="8349141316941195429" />
+      </scope>
+      <scope id="133632534783684811" at="25,84,39,22">
+        <var name="properties" id="133632534783684811" />
+      </scope>
+      <scope id="133632534783684811" at="24,0,41,0" />
+      <unit id="8349141316941195429" at="27,137,38,5" name="BaseTemplate.constraints.TemplateMethod_Constraints$1" />
+      <unit id="133632534783684811" at="19,0,42,0" name="BaseTemplate.constraints.TemplateMethod_Constraints" />
+    </file>
+  </root>
+</debug-info>
+
