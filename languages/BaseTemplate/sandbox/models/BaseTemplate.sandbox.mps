@@ -10,6 +10,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
+    <import index="81cq" ref="r:7ae19249-b5cc-42be-affe-041af14add37(BaseTemplate.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -131,35 +132,38 @@
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="db391f02-128c-4f99-939a-b50794314dff" name="BaseTemplate">
-      <concept id="7690900131439418957" name="BaseTemplate.structure.TemplateFor" flags="ng" index="2bM0UA">
+      <concept id="7690900131439418957" name="BaseTemplate.structure.TemplateForStatement" flags="ng" index="2bM0UA">
         <child id="1154032183016" name="body" index="2LFqv$" />
         <child id="1144226360166" name="iterable" index="1DdaDG" />
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
-      <concept id="7690900131439104953" name="BaseTemplate.structure.TemplateLineList" flags="ng" index="2bPkdi">
-        <child id="7690900131439104954" name="lines" index="2bPkdh" />
+      <concept id="7690900131439104953" name="BaseTemplate.structure.TemplateStatementList" flags="ng" index="2bPkdi">
+        <child id="7690900131439104954" name="statements" index="2bPkdh" />
       </concept>
-      <concept id="7690900131438994363" name="BaseTemplate.structure.TemplateIf" flags="ng" index="2bPFdg">
+      <concept id="7690900131438994363" name="BaseTemplate.structure.TemplateIfStatement" flags="ng" index="2bPFdg">
         <child id="7690900131438994367" name="condition" index="2bPFdk" />
         <child id="7690900131438996492" name="whenTrue" index="2bPFNB" />
         <child id="5299118163613137926" name="whenFalse" index="2tsgfy" />
       </concept>
-      <concept id="7690900131438512954" name="BaseTemplate.structure.TemplateExpression" flags="ng" index="2bR_Jh">
+      <concept id="7690900131438512954" name="BaseTemplate.structure.TemplateExpressionWord" flags="ng" index="2bR_Jh">
         <child id="7690900131438512957" name="exp" index="2bR_Jm" />
       </concept>
       <concept id="7690900131438512959" name="BaseTemplate.structure.TemplateStringWord" flags="ng" index="2bR_Jk">
         <property id="7690900131438512962" name="text" index="2bR_ID" />
       </concept>
-      <concept id="7690900131438512950" name="BaseTemplate.structure.TemplateTextLine" flags="ng" index="2bR_Jt">
+      <concept id="7690900131438512950" name="BaseTemplate.structure.TemplateTextStatement" flags="ng" index="2bR_Jt">
         <child id="7690900131438513017" name="words" index="2bR_Ii" />
       </concept>
-      <concept id="133632534785162905" name="BaseTemplate.structure.TemplateSwitchLine" flags="ng" index="n_NMc">
+      <concept id="133632534785162905" name="BaseTemplate.structure.TemplateSwitchStatement" flags="ng" index="n_NMc">
         <child id="133632534785162907" name="cases" index="n_NMe" />
         <child id="133632534785162906" name="node" index="n_NMf" />
       </concept>
       <concept id="133632534784634416" name="BaseTemplate.structure.TemplateCase" flags="ng" index="nBMK_">
         <child id="133632534784782327" name="lines" index="n$IRy" />
         <child id="133632534784635229" name="concept" index="nBNd8" />
+      </concept>
+      <concept id="2345325223751497023" name="BaseTemplate.structure.Indentable" flags="ng" index="1cXf7y">
+        <property id="2345325223751497294" name="indent" index="1cXfaj" />
       </concept>
       <concept id="5046878592952531596" name="BaseTemplate.structure.Template" flags="ng" index="1VvQvr">
         <child id="5046878592952531601" name="lines" index="1VvQv6" />
@@ -409,10 +413,11 @@
               </node>
             </node>
             <node concept="2bM0UA" id="4AafYjl1k_y" role="2bPkdh">
+              <property role="1cXfaj" value="    " />
               <node concept="2bPkdi" id="4AafYjl1k_$" role="2LFqv$">
                 <node concept="2bR_Jt" id="4AafYjl1kJy" role="2bPkdh">
                   <node concept="2bR_Jk" id="4AafYjl1kJB" role="2bR_Ii">
-                    <property role="2bR_ID" value="    System.out.println(&quot;" />
+                    <property role="2bR_ID" value="System.out.println(&quot;" />
                   </node>
                   <node concept="2bR_Jh" id="4AafYjl1kQ3" role="2bR_Ii">
                     <node concept="37vLTw" id="4AafYjl1ri_" role="2bR_Jm">
@@ -424,6 +429,7 @@
                   </node>
                 </node>
                 <node concept="2bPFdg" id="4AafYjl1BTs" role="2bPkdh">
+                  <property role="1cXfaj" value="    " />
                   <node concept="2OqwBi" id="4AafYjl2ry_" role="2bPFdk">
                     <node concept="37vLTw" id="4AafYjl2rjT" role="2Oq$k0">
                       <ref role="3cqZAo" node="4AafYjl1kE_" resolve="name" />
@@ -438,14 +444,14 @@
                   <node concept="2bPkdi" id="4AafYjl1BTw" role="2bPFNB">
                     <node concept="2bR_Jt" id="4AafYjl1CFY" role="2bPkdh">
                       <node concept="2bR_Jk" id="4AafYjl1CIH" role="2bR_Ii">
-                        <property role="2bR_ID" value="    // twaalf" />
+                        <property role="2bR_ID" value="// twaalf" />
                       </node>
                     </node>
                   </node>
                   <node concept="2bPkdi" id="4AafYjl2r47" role="2tsgfy">
                     <node concept="2bR_Jt" id="4AafYjl2r4k" role="2bPkdh">
                       <node concept="2bR_Jk" id="4AafYjl2r8J" role="2bR_Ii">
-                        <property role="2bR_ID" value="    // No Twelve" />
+                        <property role="2bR_ID" value="// No Twelve" />
                       </node>
                     </node>
                   </node>
