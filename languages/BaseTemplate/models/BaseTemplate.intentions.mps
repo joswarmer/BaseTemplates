@@ -901,7 +901,7 @@
       <node concept="3clFbS" id="7mU70b2afkw" role="2VODD2">
         <node concept="3clFbF" id="7mU70b2aftH" role="3cqZAp">
           <node concept="Xl_RD" id="7mU70b2aftG" role="3clFbG">
-            <property role="Xl_RC" value="Add start string to for" />
+            <property role="Xl_RC" value="Templates: Add start string to for" />
           </node>
         </node>
       </node>
@@ -991,7 +991,7 @@
       <node concept="3clFbS" id="7mU70b2aYoh" role="2VODD2">
         <node concept="3clFbF" id="7mU70b2aYoi" role="3cqZAp">
           <node concept="Xl_RD" id="7mU70b2aYoj" role="3clFbG">
-            <property role="Xl_RC" value="Add end string to for" />
+            <property role="Xl_RC" value="Templates: Add end string to for" />
           </node>
         </node>
       </node>
