@@ -234,6 +234,7 @@
     <property role="EcuMT" value="133632534783211985" />
     <property role="TrG5h" value="TemplateMethod" />
     <property role="3GE5qa" value="additions" />
+    <property role="34LRSv" value="template" />
     <ref role="1TJDcQ" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
   </node>
   <node concept="1TIwiD" id="7qKxkmhuSK">
