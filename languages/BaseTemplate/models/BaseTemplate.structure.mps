@@ -8,8 +8,8 @@
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -234,13 +234,6 @@
       <ref role="20lvS9" node="6EV$eJxrHeT" resolve="TemplateStatementList" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7qKxkmc3Bh">
-    <property role="EcuMT" value="133632534783211985" />
-    <property role="TrG5h" value="TemplateMethod" />
-    <property role="3GE5qa" value="additions" />
-    <property role="34LRSv" value="template" />
-    <ref role="1TJDcQ" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
-  </node>
   <node concept="1TIwiD" id="7qKxkmhuSK">
     <property role="EcuMT" value="133632534784634416" />
     <property role="3GE5qa" value="" />
@@ -293,39 +286,6 @@
       <property role="IQ2nx" value="5299118163629734271" />
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="17bdEo4NfkI">
-    <property role="EcuMT" value="1282178605590050094" />
-    <property role="3GE5qa" value="additions" />
-    <property role="TrG5h" value="TemplateMethod2" />
-    <property role="34LRSv" value="t2" />
-    <ref role="1TJDcQ" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
-    <node concept="1TJgyj" id="17bdEo4O2yV" role="1TKVEi">
-      <property role="IQ2ns" value="1282178605590259899" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="var" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fzcpWvK" resolve="LocalVariableDeclarationStatement" />
-    </node>
-    <node concept="1TJgyj" id="17bdEo4O2yY" role="1TKVEi">
-      <property role="IQ2ns" value="1282178605590259902" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="lines" />
-      <ref role="20lvS9" node="6EV$eJxrHeT" resolve="TemplateStatementList" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="17bdEo4Nh3M">
-    <property role="EcuMT" value="1282178605590057202" />
-    <property role="3GE5qa" value="additions" />
-    <property role="TrG5h" value="TemplateMethod2Template" />
-    <ref role="1TJDcQ" to="tpee:fzcpWvK" resolve="LocalVariableDeclarationStatement" />
-    <node concept="1TJgyj" id="17bdEo4Nh3N" role="1TKVEi">
-      <property role="IQ2ns" value="1282178605590057203" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="lines" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6EV$eJxrHeT" resolve="TemplateStatementList" />
     </node>
   </node>
   <node concept="PlHQZ" id="7mU70b2rtRp">
