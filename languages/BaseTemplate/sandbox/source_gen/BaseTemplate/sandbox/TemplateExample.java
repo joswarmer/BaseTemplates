@@ -19,28 +19,17 @@ public class TemplateExample {
     String templateName2 = "";
     {
       TemplateResult result = new TemplateResult();
+      result.append("aaaa");
+      result.append("" + 12);
+      result.append("is");
+      result.append("" + 23);
+      result.appendNewline();
       templateName2 = result.toString();
     }
     return templateName2;
   }
-  public String templateName1() {
-    String templateName1 = "";
-    {
-      TemplateResult result = new TemplateResult();
-      result.append("aaa");
-      result.appendNewline();
-      templateName1 = result.toString();
-    }
-    return templateName1;
-  }
-  public String templateName() {
-    String templateName = "";
-    {
-      TemplateResult result = new TemplateResult();
-      templateName = result.toString();
-    }
-    return templateName;
-  }
+
+
   public static void main(String[] args) {
     List<String> names = new ArrayList<String>();
     names.add("aap");
@@ -68,10 +57,10 @@ public class TemplateExample {
       result.appendNewline();
       {
         DequeSequence.fromDequeNew(result.indents).pushElement("    ");
-        boolean firstInLoop_4xg1bs_c0d0g = true;
+        boolean firstInLoop_4xg1bs_c0d0f = true;
         for (String name : names) {
-          if (firstInLoop_4xg1bs_c0d0g) {
-            firstInLoop_4xg1bs_c0d0g = false;
+          if (firstInLoop_4xg1bs_c0d0f) {
+            firstInLoop_4xg1bs_c0d0f = false;
           }
           result.append("System.out.println(\"");
           result.append("" + name);

@@ -16,6 +16,7 @@
       <external-templates />
       <dependencies>
         <dependency reexport="false">db391f02-128c-4f99-939a-b50794314dff(BaseTemplate)</dependency>
+        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
