@@ -1,9 +1,11 @@
-/**/classes_gen/
-/**/source_gen/
-/**/source_gen.caches/
-/**/test_gen/
-/**/test_gen.caches/
+**/test_gen
+**/test_gen.caches
 /**/generated/
 /**/trace.info
 /.mps/shelf/
 *.class
+**/classes_gen
+classes
+classes_gen
+source_gen
+source_gen.caches
