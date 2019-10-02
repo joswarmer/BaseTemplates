@@ -30,9 +30,7 @@
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
-      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
-        <child id="7389400916848144618" name="defaultPath" index="398pKh" />
-      </concept>
+      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT" />
       <concept id="7389400916848153117" name="jetbrains.mps.build.structure.BuildSourceMacroRelativePath" flags="ng" index="398BVA">
         <reference id="7389400916848153130" name="macro" index="398BVh" />
       </concept>
@@ -112,32 +110,6 @@
     <node concept="3b7kt6" id="GpZCAkyLU1" role="10PD9s" />
     <node concept="398rNT" id="GpZCAkyLU6" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
-      <node concept="55IIr" id="GpZCAkzqyf" role="398pKh">
-        <node concept="2Ry0Ak" id="GpZCAkzqB$" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="GpZCAkzqMw" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="GpZCAkzqQG" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="GpZCAkzqUP" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="GpZCAkzr2C" role="2Ry0An">
-                  <property role="2Ry0Am" value="MDSE" />
-                  <node concept="2Ry0Ak" id="GpZCAkzr9y" role="2Ry0An">
-                    <property role="2Ry0Am" value="apps" />
-                    <node concept="2Ry0Ak" id="GpZCAkzrbE" role="2Ry0An">
-                      <property role="2Ry0Am" value="JetBrains" />
-                      <node concept="2Ry0Ak" id="GpZCAkzrk_" role="2Ry0An">
-                        <property role="2Ry0Am" value="MPSmbeddr-2019.1.5" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2sgV4H" id="GpZCAkyLU3" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />

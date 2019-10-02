@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/BaseTemplates" />
   <property name="build.layout" location="${build.dir}/artifacts/BaseTemplates" />
-  <property name="mps.home" location="${basedir}/../../../../MDSE/apps/JetBrains/MPSmbeddr-2019.1.5" />
+  <property name="mps.home" location="" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
