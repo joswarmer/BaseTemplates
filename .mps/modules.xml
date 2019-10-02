@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/BaseTemplate/BaseTemplate.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/BaseTemplate/sandbox/BaseTemplate.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/BaseTemplates.build/BaseTemplates.build.msd" folder="" />
     </projectModules>
   </component>
 </project>
