@@ -224,13 +224,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
-      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -1484,20 +1477,13 @@
           </node>
           <node concept="9aQIb" id="4AafYjlXI1V" role="3cqZAp">
             <node concept="3clFbS" id="4AafYjlXI1W" role="9aQI4">
-              <node concept="1X3_iC" id="7mU70b2o3oT" role="lGtFl">
-                <property role="3V$3am" value="statement" />
-                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="3clFbF" id="4AafYjlXI27" role="8Wnug">
-                  <node concept="2OqwBi" id="4AafYjlXI28" role="3clFbG">
-                    <node concept="37vLTw" id="4AafYjlXI29" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4AafYjlXI1S" resolve="result" />
-                    </node>
-                    <node concept="liA8E" id="4AafYjlXI2a" role="2OqNvi">
-                      <ref role="37wK5l" to="81cq:76yziJPzQkh" resolve="append" />
-                      <node concept="Xl_RD" id="4AafYjlXI2b" role="37wK5m">
-                        <property role="Xl_RC" value="\n" />
-                      </node>
-                    </node>
+              <node concept="3clFbF" id="4dogokbVBbf" role="3cqZAp">
+                <node concept="2OqwBi" id="4dogokbVBh9" role="3clFbG">
+                  <node concept="37vLTw" id="4dogokbVBbe" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4AafYjlXI1S" resolve="result" />
+                  </node>
+                  <node concept="liA8E" id="4dogokbVBLC" role="2OqNvi">
+                    <ref role="37wK5l" to="81cq:76yziJPzQnx" resolve="appendNewline" />
                   </node>
                 </node>
               </node>

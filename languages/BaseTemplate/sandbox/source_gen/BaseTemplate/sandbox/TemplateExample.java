@@ -38,8 +38,7 @@ public class TemplateExample {
     names.add("aap");
     BaseTemplateGenerator generator = new BaseTemplateGenerator();
     String result = templateFunction(names);
-    System.out.println(result);
-
+    System.out.print(result);
     System.out.println("Done");
   }
 
@@ -50,17 +49,19 @@ public class TemplateExample {
     String template1 = "";
     {
       TemplateResult result = new TemplateResult();
+      result.appendNewline();
       result.append("public void printSomething() {");
+      result.appendNewline();
       result.appendNewline();
       result.append("    // Hello ");
       result.append("" + world + 12);
       result.appendNewline();
       {
         DequeSequence.fromDequeNew(result.indents).pushElement("    ");
-        boolean firstInLoop_4xg1bs_c0d0f = true;
+        boolean firstInLoop_4xg1bs_e0d0f = true;
         for (String name : names) {
-          if (firstInLoop_4xg1bs_c0d0f) {
-            firstInLoop_4xg1bs_c0d0f = false;
+          if (firstInLoop_4xg1bs_e0d0f) {
+            firstInLoop_4xg1bs_e0d0f = false;
           }
           result.append("System.out.println(\"");
           result.append("" + name + name);
@@ -69,6 +70,7 @@ public class TemplateExample {
           DequeSequence.fromDequeNew(result.indents).pushElement("    ");
           if (name.startsWith("a")) {
             result.append("// twaalf");
+            result.appendNewline();
             result.appendNewline();
           } else {
             result.append("// No Twelve");
