@@ -81,6 +81,7 @@
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="615427434521884870" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Subconcepts" flags="ng" index="2VfDsV" />
       <concept id="1186413799158" name="jetbrains.mps.lang.editor.structure.BracketColorStyleClassItem" flags="ln" index="VLuvy" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
@@ -349,6 +350,7 @@
   <node concept="24kQdi" id="6EV$eJxpsIV">
     <ref role="1XX52x" to="2ox9:6EV$eJxpsGU" resolve="TemplateExpressionWord" />
     <node concept="3EZMnI" id="6EV$eJxpsIX" role="2wV5jI">
+      <ref role="1k5W1q" node="2Lfbf$AQkXu" resolve="TemplateExpression" />
       <node concept="3F0ifn" id="6EV$eJxpsJ4" role="3EZMnx">
         <property role="3F0ifm" value="&lt;" />
         <ref role="1k5W1q" node="6EV$eJxriLd" resolve="ExpressionSeparator" />
@@ -534,7 +536,6 @@
         </node>
         <node concept="3EZMnI" id="6EV$eJxrHgy" role="3EZMnx">
           <node concept="2iRfu4" id="6EV$eJxrHgz" role="2iSdaV" />
-          <node concept="3XFhqQ" id="6EV$eJxrHh9" role="3EZMnx" />
           <node concept="3XFhqQ" id="6EV$eJxrHh3" role="3EZMnx" />
           <node concept="3F1sOY" id="6EV$eJxrHfN" role="3EZMnx">
             <ref role="1NtTu8" to="2ox9:6EV$eJxriKc" resolve="whenTrue" />
@@ -561,7 +562,6 @@
         </node>
         <node concept="3EZMnI" id="4AafYjkYNK_" role="3EZMnx">
           <node concept="2iRfu4" id="4AafYjkYNKA" role="2iSdaV" />
-          <node concept="3XFhqQ" id="4AafYjkYNKB" role="3EZMnx" />
           <node concept="3XFhqQ" id="4AafYjkYNKC" role="3EZMnx" />
           <node concept="3F1sOY" id="4AafYjkYNKD" role="3EZMnx">
             <ref role="1NtTu8" to="2ox9:4AafYjkYNK6" resolve="whenFalse" />
@@ -696,6 +696,19 @@
       <property role="TrG5h" value="TemplateError" />
       <node concept="VechU" id="2LAMgc1vc9O" role="3F10Kt">
         <property role="Vb096" value="red" />
+      </node>
+    </node>
+    <node concept="14StLt" id="2Lfbf$AQkXu" role="V601i">
+      <property role="TrG5h" value="TemplateExpression" />
+      <node concept="30gYXW" id="2Lfbf$AQnFq" role="3F10Kt">
+        <node concept="1iSF2X" id="2Lfbf$AQnKH" role="VblUZ">
+          <property role="1iTho6" value="E6FFFE" />
+        </node>
+      </node>
+      <node concept="Veino" id="2Lfbf$AQFcf" role="3F10Kt">
+        <node concept="1iSF2X" id="2Lfbf$AQFef" role="VblUZ">
+          <property role="1iTho6" value="E6FFFE" />
+        </node>
       </node>
     </node>
   </node>
@@ -1035,7 +1048,6 @@
           </node>
           <node concept="3EZMnI" id="2yhw7tp2s39" role="3EZMnx">
             <node concept="2iRfu4" id="2yhw7tp2s3a" role="2iSdaV" />
-            <node concept="3XFhqQ" id="2yhw7tp2s3b" role="3EZMnx" />
             <node concept="3XFhqQ" id="2yhw7tp2s3c" role="3EZMnx" />
             <node concept="3F1sOY" id="2yhw7tp2s3d" role="3EZMnx">
               <ref role="1NtTu8" to="2ox9:gMLFqrC" resolve="body" />
@@ -1193,7 +1205,6 @@
       </node>
       <node concept="3EZMnI" id="7qKxkmjbHQ" role="3EZMnx">
         <node concept="2iRfu4" id="7qKxkmjbHR" role="2iSdaV" />
-        <node concept="3XFhqQ" id="7qKxkmjbHV" role="3EZMnx" />
         <node concept="3XFhqQ" id="7qKxkmjbI0" role="3EZMnx" />
         <node concept="3F1sOY" id="7qKxkmiNbT" role="3EZMnx">
           <ref role="1NtTu8" to="2ox9:7qKxkmi2ZR" resolve="lines" />
@@ -1244,7 +1255,6 @@
           <node concept="2iRfu4" id="7qKxkmjB6z" role="2iSdaV" />
         </node>
         <node concept="3EZMnI" id="7qKxkmjB6$" role="3EZMnx">
-          <node concept="3XFhqQ" id="7qKxkmjB6_" role="3EZMnx" />
           <node concept="3XFhqQ" id="7qKxkmjB6A" role="3EZMnx" />
           <node concept="2iRfu4" id="7qKxkmjB6B" role="2iSdaV" />
           <node concept="3F2HdR" id="7qKxkmjB6C" role="3EZMnx">
@@ -1587,7 +1597,6 @@
       <node concept="l2Vlx" id="2LAMgc0u35Z" role="2iSdaV" />
       <node concept="3EZMnI" id="15Qfdb4Ud6s" role="3EZMnx">
         <ref role="1ERwB7" node="15Qfdb4Ka4T" resolve="BlockDwelete" />
-        <node concept="3XFhqQ" id="15Qfdb4Uh$n" role="3EZMnx" />
         <node concept="3XFhqQ" id="15Qfdb4Uipg" role="3EZMnx" />
         <node concept="2iRfu4" id="15Qfdb4Ud6t" role="2iSdaV" />
         <node concept="1iCGBv" id="15Qfdb4Oms5" role="3EZMnx">

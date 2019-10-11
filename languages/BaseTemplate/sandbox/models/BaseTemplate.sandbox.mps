@@ -512,8 +512,13 @@
                 <property role="2bR_ID" value="    // Hello " />
               </node>
               <node concept="2bR_Jh" id="4AafYjl1k8g" role="2bR_Ii">
-                <node concept="37vLTw" id="4AafYjl1kwE" role="2bR_Jm">
-                  <ref role="3cqZAo" node="6EV$eJxpv63" resolve="world" />
+                <node concept="3cpWs3" id="2Lfbf$AR4d6" role="2bR_Jm">
+                  <node concept="3cmrfG" id="2Lfbf$AR4hD" role="3uHU7w">
+                    <property role="3cmrfH" value="12" />
+                  </node>
+                  <node concept="37vLTw" id="4AafYjl1kwE" role="3uHU7B">
+                    <ref role="3cqZAo" node="6EV$eJxpv63" resolve="world" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -525,8 +530,13 @@
                     <property role="2bR_ID" value="System.out.println(&quot;" />
                   </node>
                   <node concept="2bR_Jh" id="4AafYjl1kQ3" role="2bR_Ii">
-                    <node concept="37vLTw" id="4AafYjl1ri_" role="2bR_Jm">
-                      <ref role="3cqZAo" node="4AafYjl1kE_" resolve="name" />
+                    <node concept="3cpWs3" id="2Lfbf$AR4GH" role="2bR_Jm">
+                      <node concept="37vLTw" id="2Lfbf$AR4La" role="3uHU7w">
+                        <ref role="3cqZAo" node="4AafYjl1kE_" resolve="name" />
+                      </node>
+                      <node concept="37vLTw" id="4AafYjl1ri_" role="3uHU7B">
+                        <ref role="3cqZAo" node="4AafYjl1kE_" resolve="name" />
+                      </node>
                     </node>
                   </node>
                   <node concept="2bR_Jk" id="4AafYjl1rkQ" role="2bR_Ii">

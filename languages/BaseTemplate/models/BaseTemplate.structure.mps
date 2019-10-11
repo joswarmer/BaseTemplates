@@ -314,7 +314,7 @@
     <property role="EcuMT" value="3199465600023205473" />
     <property role="TrG5h" value="TemplateMethod3" />
     <property role="3GE5qa" value="methods" />
-    <property role="34LRSv" value="t3" />
+    <property role="34LRSv" value="template" />
     <ref role="1TJDcQ" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
     <node concept="1TJgyj" id="15Qfdb4Ohqp" role="1TKVEi">
       <property role="IQ2ns" value="1258260021839468185" />

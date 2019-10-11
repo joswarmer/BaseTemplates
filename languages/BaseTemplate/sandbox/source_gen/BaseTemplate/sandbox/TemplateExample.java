@@ -53,7 +53,7 @@ public class TemplateExample {
       result.append("public void printSomething() {");
       result.appendNewline();
       result.append("    // Hello ");
-      result.append("" + world);
+      result.append("" + world + 12);
       result.appendNewline();
       {
         DequeSequence.fromDequeNew(result.indents).pushElement("    ");
@@ -63,7 +63,7 @@ public class TemplateExample {
             firstInLoop_4xg1bs_c0d0f = false;
           }
           result.append("System.out.println(\"");
-          result.append("" + name);
+          result.append("" + name + name);
           result.append("\");");
           result.appendNewline();
           DequeSequence.fromDequeNew(result.indents).pushElement("    ");
