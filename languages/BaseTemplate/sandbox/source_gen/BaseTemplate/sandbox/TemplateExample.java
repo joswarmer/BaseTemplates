@@ -90,9 +90,11 @@ public class TemplateExample {
             }
             break;
           default:
+            result.append("SWITCH ERROR, no matched case");
         }
       }
       result.append("}");
+      result.appendNewline();
       result.appendNewline();
       template1 = result.toString();
     }

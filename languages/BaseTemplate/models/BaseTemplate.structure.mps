@@ -273,6 +273,13 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="7qKxkmhuSK" resolve="TemplateCase" />
     </node>
+    <node concept="1TJgyj" id="6I_f05mvkqM" role="1TKVEi">
+      <property role="IQ2ns" value="7756671909659231922" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="default" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6EV$eJxrHeT" resolve="TemplateStatementList" />
+    </node>
     <node concept="PrWs8" id="22chdPGubPs" role="PzmwI">
       <ref role="PrY4T" node="22chdPGubkZ" resolve="Indentable" />
     </node>
