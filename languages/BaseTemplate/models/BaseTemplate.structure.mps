@@ -339,5 +339,20 @@
       <property role="t5JxN" value="Special return statement taht will never show explicitly." />
     </node>
   </node>
+  <node concept="1TIwiD" id="7h0toMQ25cp">
+    <property role="EcuMT" value="8376824554118992665" />
+    <property role="TrG5h" value="TemplateCall" />
+    <property role="34LRSv" value="call" />
+    <ref role="1TJDcQ" node="6EV$eJxrieU" resolve="TemplateStatement" />
+    <node concept="1TJgyj" id="7h0toMQ25_a" role="1TKVEi">
+      <property role="IQ2ns" value="8376824554118994250" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <ref role="20lvS9" node="6EV$eJxpsGU" resolve="TemplateExpressionWord" />
+    </node>
+    <node concept="PrWs8" id="7h0toMQ25TH" role="PzmwI">
+      <ref role="PrY4T" node="22chdPGubkZ" resolve="Indentable" />
+    </node>
+  </node>
 </model>
 

@@ -205,6 +205,9 @@
         <reference id="1258260021839468185" name="template" index="3lDMDb" />
       </concept>
       <concept id="3199465600024011469" name="BaseTemplate.structure.TemplateReturnStatement" flags="ng" index="GTqJe" />
+      <concept id="8376824554118992665" name="BaseTemplate.structure.TemplateCall" flags="ng" index="32i2ql">
+        <child id="8376824554118994250" name="expression" index="32i2N6" />
+      </concept>
       <concept id="2345325223751497023" name="BaseTemplate.structure.Indentable" flags="ng" index="1cXf7y">
         <property id="2345325223751497294" name="indent" index="1cXfaj" />
       </concept>
@@ -510,6 +513,17 @@
               </node>
             </node>
             <node concept="2bPFdh" id="4dogokbV$AE" role="2bPkdh" />
+            <node concept="32i2ql" id="7h0toMQ3hzy" role="2bPkdh">
+              <property role="1cXfaj" value="        " />
+              <node concept="2bR_Jh" id="7h0toMQ3hAO" role="32i2N6">
+                <node concept="1rXfSq" id="7h0toMQ3iX0" role="2bR_Jm">
+                  <ref role="37wK5l" node="7h0toMQ3hJX" resolve="templateName" />
+                </node>
+              </node>
+            </node>
+            <node concept="2bR_Jt" id="7h0toMQ48NG" role="2bPkdh">
+              <node concept="2bR_Jh" id="7h0toMQ48U6" role="2bR_Ii" />
+            </node>
             <node concept="2bR_Jt" id="4AafYjl1k2D" role="2bPkdh">
               <node concept="2bR_Jk" id="4AafYjl1k4y" role="2bR_Ii">
                 <property role="2bR_ID" value="    // Hello " />
@@ -630,6 +644,43 @@
       </node>
       <node concept="17QB3L" id="6EV$eJxptYf" role="3clF45" />
       <node concept="3Tm1VV" id="6EV$eJxptXZ" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="7h0toMQ3fsw" role="jymVt" />
+    <node concept="2YIFZL" id="7h0toMQ3hJX" role="jymVt">
+      <property role="TrG5h" value="templateName" />
+      <node concept="3clFbS" id="7h0toMQ3gPP" role="3clF47">
+        <node concept="1VvQvr" id="7h0toMQ3gPQ" role="3cqZAp">
+          <node concept="3cpWsn" id="7h0toMQ3gPT" role="3cpWs9">
+            <property role="TrG5h" value="templateName" />
+            <node concept="17QB3L" id="7h0toMQ3gPU" role="1tU5fm" />
+            <node concept="Xl_RD" id="7h0toMQ3gPV" role="33vP2m" />
+          </node>
+          <node concept="2bPkdi" id="7h0toMQ3gPW" role="1VvQv6">
+            <node concept="2bR_Jt" id="7h0toMQ3h9U" role="2bPkdh">
+              <node concept="2bR_Jk" id="7h0toMQ3haI" role="2bR_Ii">
+                <property role="2bR_ID" value="Regel 1" />
+              </node>
+            </node>
+            <node concept="2bR_Jt" id="7h0toMQ3hfi" role="2bPkdh">
+              <node concept="2bR_Jk" id="7h0toMQ3hfq" role="2bR_Ii">
+                <property role="2bR_ID" value="  Regel 2" />
+              </node>
+            </node>
+            <node concept="2bR_Jt" id="7h0toMQ3hjB" role="2bPkdh">
+              <node concept="2bR_Jk" id="7h0toMQ3hjN" role="2bR_Ii">
+                <property role="2bR_ID" value="Regel 3" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7h0toMQ3ipX" role="3cqZAp">
+          <node concept="37vLTw" id="7h0toMQ3iJi" role="3cqZAk">
+            <ref role="3cqZAo" node="7h0toMQ3gPT" resolve="templateName" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7h0toMQ3gPO" role="3clF45" />
+      <node concept="3Tm1VV" id="7h0toMQ3gQ1" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="6EV$eJxptWD" role="1B3o_S" />
   </node>

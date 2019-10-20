@@ -9,9 +9,8 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.DequeSequence;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
-import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
-import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class TemplateExample {
 
@@ -53,15 +52,21 @@ public class TemplateExample {
       result.append("public void printSomething() {");
       result.appendNewline();
       result.appendNewline();
+      DequeSequence.fromDequeNew(result.indents).pushElement("        ");
+      result.append("" + templateName());
+      result.appendNewline();
+      DequeSequence.fromDequeNew(result.indents).popElement();
+      result.append("" + "WARNING: EMPTY EXPRESSION IN TEMPLATE");
+      result.appendNewline();
       result.append("    // Hello ");
       result.append("" + world + 12);
       result.appendNewline();
       {
         DequeSequence.fromDequeNew(result.indents).pushElement("    ");
-        boolean firstInLoop_4xg1bs_e0d0f = true;
+        boolean firstInLoop_4xg1bs_g0d0f = true;
         for (String name : names) {
-          if (firstInLoop_4xg1bs_e0d0f) {
-            firstInLoop_4xg1bs_e0d0f = false;
+          if (firstInLoop_4xg1bs_g0d0f) {
+            firstInLoop_4xg1bs_g0d0f = false;
           }
           result.append("System.out.println(\"");
           result.append("" + name + name);
@@ -82,15 +87,14 @@ public class TemplateExample {
       }
       {
         SAbstractConcept cncpt = SNodeOperations.getConcept(literal);
-        switch (conceptIndex.index(cncpt)) {
-          case 0:
-            if (true) {
-              result.append("" + 12);
-              result.appendNewline();
-            }
-            break;
-          default:
-            result.append("SWITCH ERROR, no matched case");
+        boolean noneMatched = true;
+        if (noneMatched && SConceptOperations.isSubConceptOf(cncpt, MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, "jetbrains.mps.baseLanguage.structure.StringLiteral"))) {
+          noneMatched = false;
+          result.append("" + 12);
+          result.appendNewline();
+        }
+        if (noneMatched) {
+          result.appendNewline();
         }
       }
       result.append("}");
@@ -101,5 +105,19 @@ public class TemplateExample {
 
     return template1;
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L)).seal();
+
+  public static String templateName() {
+    String templateName = "";
+    {
+      TemplateResult result = new TemplateResult();
+      result.append("Regel 1");
+      result.appendNewline();
+      result.append("  Regel 2");
+      result.appendNewline();
+      result.append("Regel 3");
+      result.appendNewline();
+      templateName = result.toString();
+    }
+    return templateName;
+  }
 }
