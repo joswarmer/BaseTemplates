@@ -2,10 +2,10 @@
 <model ref="r:b761631d-c4eb-4928-b80a-054c89970ec8(BaseTemplate.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -125,11 +125,8 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -205,6 +202,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -714,8 +719,22 @@
         <node concept="3clFbJ" id="7Y69gu1Ks5r" role="3cqZAp">
           <node concept="3clFbS" id="7Y69gu1Ks5t" role="3clFbx">
             <node concept="3SKdUt" id="7Y69gu1K$zB" role="3cqZAp">
-              <node concept="3SKdUq" id="7Y69gu1K$zD" role="3SKWNk">
-                <property role="3SKdUp" value="selection, so split is possible" />
+              <node concept="1PaTwC" id="6$qrEWWKwt6" role="3ndbpf">
+                <node concept="3oM_SD" id="6$qrEWWKwt7" role="1PaTwD">
+                  <property role="3oM_SC" value="selection," />
+                </node>
+                <node concept="3oM_SD" id="6$qrEWWKwt8" role="1PaTwD">
+                  <property role="3oM_SC" value="so" />
+                </node>
+                <node concept="3oM_SD" id="6$qrEWWKwt9" role="1PaTwD">
+                  <property role="3oM_SC" value="split" />
+                </node>
+                <node concept="3oM_SD" id="6$qrEWWKwta" role="1PaTwD">
+                  <property role="3oM_SC" value="is" />
+                </node>
+                <node concept="3oM_SD" id="6$qrEWWKwtb" role="1PaTwD">
+                  <property role="3oM_SC" value="possible" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs6" id="7Y69gu1Ktve" role="3cqZAp">
@@ -750,8 +769,37 @@
           <node concept="9aQIb" id="7Y69gu1KtMZ" role="9aQIa">
             <node concept="3clFbS" id="7Y69gu1KtN0" role="9aQI4">
               <node concept="3SKdUt" id="7Y69gu1K$T9" role="3cqZAp">
-                <node concept="3SKdUq" id="7Y69gu1K$Tb" role="3SKWNk">
-                  <property role="3SKdUp" value="exclude split at both ends when there is no selection" />
+                <node concept="1PaTwC" id="6$qrEWWKwtc" role="3ndbpf">
+                  <node concept="3oM_SD" id="6$qrEWWKwtd" role="1PaTwD">
+                    <property role="3oM_SC" value="exclude" />
+                  </node>
+                  <node concept="3oM_SD" id="6$qrEWWKwte" role="1PaTwD">
+                    <property role="3oM_SC" value="split" />
+                  </node>
+                  <node concept="3oM_SD" id="6$qrEWWKwtf" role="1PaTwD">
+                    <property role="3oM_SC" value="at" />
+                  </node>
+                  <node concept="3oM_SD" id="6$qrEWWKwtg" role="1PaTwD">
+                    <property role="3oM_SC" value="both" />
+                  </node>
+                  <node concept="3oM_SD" id="6$qrEWWKwth" role="1PaTwD">
+                    <property role="3oM_SC" value="ends" />
+                  </node>
+                  <node concept="3oM_SD" id="6$qrEWWKwti" role="1PaTwD">
+                    <property role="3oM_SC" value="when" />
+                  </node>
+                  <node concept="3oM_SD" id="6$qrEWWKwtj" role="1PaTwD">
+                    <property role="3oM_SC" value="there" />
+                  </node>
+                  <node concept="3oM_SD" id="6$qrEWWKwtk" role="1PaTwD">
+                    <property role="3oM_SC" value="is" />
+                  </node>
+                  <node concept="3oM_SD" id="6$qrEWWKwtl" role="1PaTwD">
+                    <property role="3oM_SC" value="no" />
+                  </node>
+                  <node concept="3oM_SD" id="6$qrEWWKwtm" role="1PaTwD">
+                    <property role="3oM_SC" value="selection" />
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="7Y69gu1KtWS" role="3cqZAp">

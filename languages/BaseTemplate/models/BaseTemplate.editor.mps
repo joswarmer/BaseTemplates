@@ -2,7 +2,7 @@
 <model ref="r:f2ca5f71-ae1d-4e6e-a033-39f6b00404a2(BaseTemplate.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -71,7 +71,7 @@
       </concept>
       <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
-        <child id="1186402402630" name="styleClass" index="V601i" />
+        <child id="1186402402630" name="styles" index="V601i" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -608,10 +608,10 @@
     <node concept="14StLt" id="6EV$eJxrs7u" role="V601i">
       <property role="TrG5h" value="Template" />
       <node concept="VechU" id="6EV$eJxrs7D" role="3F10Kt">
-        <property role="Vb096" value="DARK_GREEN" />
+        <property role="Vb096" value="g1_qRwE/darkGreen" />
       </node>
       <node concept="Vb9p2" id="6EV$eJxrtux" role="3F10Kt">
-        <property role="Vbekb" value="BOLD" />
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
       </node>
     </node>
     <node concept="14StLt" id="7mU70b2PNgn" role="V601i">
@@ -695,7 +695,7 @@
     <node concept="14StLt" id="2LAMgc1vc09" role="V601i">
       <property role="TrG5h" value="TemplateError" />
       <node concept="VechU" id="2LAMgc1vc9O" role="3F10Kt">
-        <property role="Vb096" value="red" />
+        <property role="Vb096" value="fLwANPn/red" />
       </node>
     </node>
     <node concept="14StLt" id="2Lfbf$AQkXu" role="V601i">
@@ -1380,7 +1380,7 @@
     <property role="TrG5h" value="Block" />
     <ref role="1h_SK9" to="tpee:fzclF80" resolve="StatementList" />
     <node concept="1hA7zw" id="7fu6WF7NnlY" role="1h_SK8">
-      <property role="1hAc7j" value="insert_action_id" />
+      <property role="1hAc7j" value="13S4mXuSN7V/insert_action_id" />
       <node concept="1hAIg9" id="7fu6WF7NnlZ" role="1hA7z_">
         <node concept="3clFbS" id="7fu6WF7Nnm0" role="2VODD2">
           <node concept="3clFbF" id="15Qfdb4IJ$D" role="3cqZAp">
@@ -1412,7 +1412,7 @@
             <property role="3V$3am" value="statement" />
             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
             <node concept="2xdQw9" id="15Qfdb4Iwkm" role="8Wnug">
-              <property role="2xdLsb" value="info" />
+              <property role="2xdLsb" value="h1akgim/info" />
               <node concept="Xl_RD" id="15Qfdb4Iwko" role="9lYJi">
                 <property role="Xl_RC" value="BlockAction INSERT" />
               </node>
@@ -1422,7 +1422,7 @@
       </node>
     </node>
     <node concept="1hA7zw" id="7fu6WF7NnlK" role="1h_SK8">
-      <property role="1hAc7j" value="insert_before_action_id" />
+      <property role="1hAc7j" value="13S4mXuSN7W/insert_before_action_id" />
       <node concept="1hAIg9" id="7fu6WF7NnlL" role="1hA7z_">
         <node concept="3clFbS" id="7fu6WF7NnlM" role="2VODD2">
           <node concept="3clFbF" id="15Qfdb4IJTr" role="3cqZAp">
@@ -1443,7 +1443,7 @@
             <property role="3V$3am" value="statement" />
             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
             <node concept="2xdQw9" id="15Qfdb4IwAt" role="8Wnug">
-              <property role="2xdLsb" value="info" />
+              <property role="2xdLsb" value="h1akgim/info" />
               <node concept="Xl_RD" id="15Qfdb4IwAu" role="9lYJi">
                 <property role="Xl_RC" value="BlockAction INSERT_BEFORE" />
               </node>
@@ -1453,7 +1453,7 @@
       </node>
     </node>
     <node concept="1hA7zw" id="7fu6WF7Nnmq" role="1h_SK8">
-      <property role="1hAc7j" value="insert_placeholder_action_id" />
+      <property role="1hAc7j" value="3xhyJYa3zm9/insert_placeholder_action_id" />
       <node concept="1hAIg9" id="7fu6WF7Nnmr" role="1hA7z_">
         <node concept="3clFbS" id="7fu6WF7Nnms" role="2VODD2">
           <node concept="3clFbF" id="15Qfdb4IKhy" role="3cqZAp">
@@ -1474,7 +1474,7 @@
             <property role="3V$3am" value="statement" />
             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
             <node concept="2xdQw9" id="15Qfdb4Ixb7" role="8Wnug">
-              <property role="2xdLsb" value="info" />
+              <property role="2xdLsb" value="h1akgim/info" />
               <node concept="Xl_RD" id="15Qfdb4Ixb8" role="9lYJi">
                 <property role="Xl_RC" value="BlockAction INSERT_PLACEHOLDER" />
               </node>
@@ -1484,7 +1484,7 @@
       </node>
     </node>
     <node concept="1hA7zw" id="7fu6WF7NnmI" role="1h_SK8">
-      <property role="1hAc7j" value="insert_placeholder_before_action_id" />
+      <property role="1hAc7j" value="qmyvdpNLIC/insert_placeholder_before_action_id" />
       <node concept="1hAIg9" id="7fu6WF7NnmJ" role="1hA7z_">
         <node concept="3clFbS" id="7fu6WF7NnmK" role="2VODD2">
           <node concept="3clFbF" id="15Qfdb4IKEB" role="3cqZAp">
@@ -1505,7 +1505,7 @@
             <property role="3V$3am" value="statement" />
             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
             <node concept="2xdQw9" id="15Qfdb4Ixdy" role="8Wnug">
-              <property role="2xdLsb" value="info" />
+              <property role="2xdLsb" value="h1akgim/info" />
               <node concept="Xl_RD" id="15Qfdb4Ixdz" role="9lYJi">
                 <property role="Xl_RC" value="BlockAction INSERT_PLACEHOLDER_BEFORE" />
               </node>
@@ -1515,13 +1515,13 @@
       </node>
     </node>
     <node concept="1hA7zw" id="2LAMgc0yehs" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="2LAMgc0yeht" role="1hA7z_">
         <node concept="3clFbS" id="2LAMgc0yehu" role="2VODD2" />
       </node>
     </node>
     <node concept="1hA7zw" id="7fu6WF7Nnn5" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
       <node concept="1hAIg9" id="7fu6WF7Nnn6" role="1hA7z_">
         <node concept="3clFbS" id="7fu6WF7Nnn7" role="2VODD2" />
       </node>
@@ -1711,7 +1711,7 @@
     <property role="TrG5h" value="BlockDwelete" />
     <ref role="1h_SK9" to="tpee:fzclF80" resolve="StatementList" />
     <node concept="1hA7zw" id="15Qfdb4Ka5G" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
       <node concept="1hAIg9" id="15Qfdb4Ka5H" role="1hA7z_">
         <node concept="3clFbS" id="15Qfdb4Ka5I" role="2VODD2">
           <node concept="3clFbF" id="15Qfdb4KaXS" role="3cqZAp">
@@ -1743,7 +1743,7 @@
       </node>
     </node>
     <node concept="1hA7zw" id="15Qfdb4Ka5J" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
       <node concept="1hAIg9" id="15Qfdb4Ka5K" role="1hA7z_">
         <node concept="3clFbS" id="15Qfdb4Ka5L" role="2VODD2">
           <node concept="3clFbF" id="15Qfdb4Kb51" role="3cqZAp">
