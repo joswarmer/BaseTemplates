@@ -1538,7 +1538,7 @@
         <property role="VOm3f" value="true" />
       </node>
       <node concept="3F0ifn" id="2LAMgc0u35v" role="3EZMnx">
-        <property role="3F0ifm" value="template3" />
+        <property role="3F0ifm" value="template method" />
         <ref role="1k5W1q" node="6EV$eJxriLd" resolve="ExpressionSeparator" />
       </node>
       <node concept="PMmxH" id="2LAMgc0u35w" role="3EZMnx">
@@ -1648,7 +1648,7 @@
         <node concept="VPM3Z" id="15Qfdb4W1NO" role="3F10Kt" />
       </node>
       <node concept="3F0ifn" id="15Qfdb4GFKy" role="3EZMnx">
-        <property role="3F0ifm" value="end template" />
+        <property role="3F0ifm" value="end template method" />
         <ref role="1k5W1q" node="6EV$eJxriLd" resolve="ExpressionSeparator" />
         <node concept="pVoyu" id="15Qfdb4HMQ6" role="3F10Kt">
           <property role="VOm3f" value="true" />
