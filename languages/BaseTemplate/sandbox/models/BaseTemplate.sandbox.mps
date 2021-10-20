@@ -552,12 +552,17 @@
                     <property role="2bR_ID" value="System.out.println(&quot;" />
                   </node>
                   <node concept="2bR_Jh" id="4AafYjl1kQ3" role="2bR_Ii">
-                    <node concept="3cpWs3" id="2Lfbf$AR4GH" role="2bR_Jm">
-                      <node concept="37vLTw" id="2Lfbf$AR4La" role="3uHU7w">
-                        <ref role="3cqZAo" node="4AafYjl1kE_" resolve="name" />
+                    <node concept="3cpWs3" id="6HEQM$QHLdq" role="2bR_Jm">
+                      <node concept="37vLTw" id="6HEQM$QHJhF" role="3uHU7w">
+                        <ref role="3cqZAo" node="6EV$eJxpv63" resolve="world" />
                       </node>
-                      <node concept="37vLTw" id="4AafYjl1ri_" role="3uHU7B">
-                        <ref role="3cqZAo" node="4AafYjl1kE_" resolve="name" />
+                      <node concept="3cpWs3" id="2Lfbf$AR4GH" role="3uHU7B">
+                        <node concept="37vLTw" id="4AafYjl1ri_" role="3uHU7B">
+                          <ref role="3cqZAo" node="4AafYjl1kE_" resolve="name" />
+                        </node>
+                        <node concept="Xl_RD" id="6HEQM$QHLgL" role="3uHU7w">
+                          <property role="Xl_RC" value=" - " />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -581,7 +586,17 @@
                   <node concept="2bPkdi" id="4AafYjl1BTw" role="2bPFNB">
                     <node concept="2bR_Jt" id="4AafYjl1CFY" role="2bPkdh">
                       <node concept="2bR_Jk" id="4AafYjl1CIH" role="2bR_Ii">
-                        <property role="2bR_ID" value="// twaalf" />
+                        <property role="2bR_ID" value="// Name starts with an a" />
+                      </node>
+                    </node>
+                    <node concept="2bR_Jt" id="6HEQM$QHPkv" role="2bPkdh">
+                      <node concept="2bR_Jk" id="6HEQM$QHPm0" role="2bR_Ii">
+                        <property role="2bR_ID" value="// Indented because the &quot;for&quot; is indented" />
+                      </node>
+                    </node>
+                    <node concept="2bR_Jt" id="6HEQM$QHPwq" role="2bPkdh">
+                      <node concept="2bR_Jk" id="6HEQM$QHPxX" role="2bR_Ii">
+                        <property role="2bR_ID" value="// And the empty line below is really part of the template" />
                       </node>
                     </node>
                     <node concept="2bPFdh" id="4dogokbWbnp" role="2bPkdh" />
@@ -589,7 +604,7 @@
                   <node concept="2bPkdi" id="4AafYjl2r47" role="2tsgfy">
                     <node concept="2bR_Jt" id="4AafYjl2r4k" role="2bPkdh">
                       <node concept="2bR_Jk" id="4AafYjl2r8J" role="2bR_Ii">
-                        <property role="2bR_ID" value="// No Twelve" />
+                        <property role="2bR_ID" value="// Name starts NOT with an a" />
                       </node>
                     </node>
                   </node>
